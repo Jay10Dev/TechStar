@@ -1,0 +1,31 @@
+var imageID=0;
+function changeimage(every_second)
+{
+if(!imageID)
+  {
+    document.getElementById("slider").src="balushahi.jpg";
+	imageID++;
+  }
+ else
+   {
+     if(imageID==1)
+	  {
+	    document.getElementById("slider").src="laalmass.jpg";
+		imageID++;
+	  }
+	 else
+	  {
+	    if(imageID==2)
+		 {
+		   document.getElementById("slider").src="shahigatte.jpg";
+		   imageID++;
+         }
+	   else
+	     {
+		   if(imageID==3)
+		    {
+			  document.getElementById("slider").src="dalbati.jpg";
+		      imageID==0;
+		    }}}}
+setTimeout("changeimage("+every_second+")",((every_second)*1000);
+}
